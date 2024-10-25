@@ -274,32 +274,38 @@ footer{
 
 }
 #Txtinicial{
-    display: flex;
-    margin-left: 20px;
+    text-align: center;
 }
-#derechos{
-    padding-left: 725px;
+#Txtfinal{
+    /*display: flex;
+    font-weight: 300;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+    grid-template-rows: repeat(3, 5%); /* Crea 3 filas de altura fija de 10% */
+    gap: 10px; /* Espacio entre las celdas */
 }
-#txtfinal{
-    display: flex;
-    font-weight: 300;
+
+.grid-item {
+    color: #fff;
+    text-align: center;
 }
-#datosc{
-    align-items: center;
-    padding-left: 25px;
-    font-weight: 300;
+
+img{
+    border: 5px, solid, #a60a58;
 }
-#qr{
-    padding-left: 730px;
-    font-weight: 500;
+
+#horario-table{
+    margin-left: auto;
+    margin-right: auto;
 }
+
 #redessociales{
     list-style: none;
     
 }
 li{
     display: inline-block;
-
+    padding-right: 10px;
 }
 
 
