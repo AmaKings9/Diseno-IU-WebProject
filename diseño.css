@@ -1,3 +1,4 @@
+/*carrusel-container2*/
 nav{
     position: fixed;
     background-color: #D44C90;
@@ -316,6 +317,7 @@ li{
     text-align: center;
     font-size: 45px;
     font-weight: 900;
+    color: #a60a58;
 }
 #tacos1{
     text-align: center;
@@ -386,21 +388,12 @@ li{
 }
 #nu{
     text-align: center;
-    font-size: 45px;
-    font-weight: 900;
+    font-size: 4.5rem; 
+    font-weight: bolder;
+    color: #a60a58;
+    padding-top: 15px;
 }
 
-.comentariosF{
-    background-color: #D44C90;
-
-    padding-bottom: 300px;
-}
-#comentarios1F{
-    font-weight: 900;
-    font-size: 45px;
-    padding-top: 50px;
-    text-align: center;
-}
 #historiatxt{
     padding-top: 50px;
     text-align: justify;
@@ -421,6 +414,123 @@ li{
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
 
+}
+
+.carrusel-container2{
+    max-width: 1800px;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+}
+
+.carrusel-container2 hr{
+    width: 50%;
+    height: 4px;
+    border: none;
+    background: #d44c90;
+    justify-content: center;
+    text-align: center;
+}
+.carrusel-container2 .slides{
+    width: 400%;
+    left: 0;
+    padding-left: 0;
+    padding-top: 20px;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    transition: all .8s cubic-bezier(1, 0, 0, 1);
+    justify-content: center;
+    text-align: center;
+}
+.slides li{
+    width: 25%;
+    position: static;
+    float: left;
+    
+}
+.carrusel-container2 li p{
+    margin-top: 0;
+    justify-content: center;
+    text-align: center;
+    padding-right: 40px;
+}
+.carrusel-container2 li q{
+    max-width: 90%;
+    margin: auto;
+    color: #181818;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+}
+.carrusel-container2 li img{
+    width: 500px;
+    border-radius: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+    justify-content: center;
+    text-align: center;
+}
+.carrusel-container2 li span.author{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 100;
+    color: #1d1d1d;
+    display: block;
+}
+.navigation{
+    display: block;
+    list-style: none;
+    text-align: center;
+    border: 40px;
+    position: absolute;
+    width: 104px;
+    left: 50%;
+    margin-left: -52px;
+    justify-content: center;
+}
+.carrusel-container2 input{
+    display: none;
+}
+.navigation label{
+    float: left;
+    margin: 6px;
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: solid 2px #d44c90;
+}
+#radio1:checked ~ .slides{
+    transform: translateX(0%);
+}
+#radio2:checked ~ .slides{
+    transform: translateX(-25%);
+}
+#radio3:checked ~ .slides{
+    transform: translateX(-50%);
+}
+.navigation label:hover{
+    cursor: pointer;
+}
+#radio1:checked ~ .navigation label#radioSelect1,
+#radio2:checked ~ .navigation label#radioSelect2,
+#radio3:checked ~ .navigation label#radioSelect3 {
+    background: #d44c90;
+}
+@media screen and (max-width: 480px){
+    .carrusel-container2 li p{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .carrusel-container2 li q{
+        font-size: 1em;
+    }
+    .carrusel-container2 h2{
+        font-size: 20px;
+    }
 }
 
 /* cuarto html //////////////////////////////////////////////////////////////// */
