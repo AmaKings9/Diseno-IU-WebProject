@@ -578,11 +578,15 @@ input[type="submit"]{
 #redessocialess{
     list-style: none;
     padding-top: 30px;
-    padding-left: 440px;
     padding-bottom: 30px;
+    padding-left: 35%;
 }
 #contactar{
     padding-bottom: 100px;
+}
+
+.icono-redes{
+    width: 100px;
 }
 
 /* quinto html //////////////////////////////////////////////////////////////// */
